@@ -36,7 +36,7 @@ function createServer() {
         return;
       }
 
-      const { originalCase, convertedText } = convertToCase(toCase, text);
+      const { originalCase, convertedText } = convertToCase(text, toCase);
 
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(
